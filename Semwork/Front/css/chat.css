@@ -1,0 +1,177 @@
+/* start general info */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    position: relative;
+    margin: 0;
+    background-color: #09165A;
+    background-image: url('/img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+/* end general info */
+
+/* start header info */
+
+.header {
+    height: 70px;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.headerInner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.title {
+    float: left;
+    color: #546791;
+}
+
+.menu a {
+    margin-left: 10px;
+    color: #546791;
+}
+/* end header info */
+
+/* start main info */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.col-md-8 {
+    min-width: 900px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #546791;
+    margin-bottom: 20px;
+    width: 100%; /* Увеличьте ширину по вашему усмотрению */
+    max-width: 1500px; /* Максимальная ширина блока */
+    margin: 0 auto; /* Центрирование блока по горизонтали */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.ms-2 {
+    margin-left: 0.5rem;
+}
+
+/* Пользовательские стили для текстового поля */
+.form-outline {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #546791;
+    padding: 10px 15px;
+    width: 79%; /* Ширина с учетом отступов */
+}
+
+.addCommentButton {
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #546791;
+    background-color: #546791;
+    padding: 10px 15px;
+    width: 26%; /* Ширина с учетом отступов */
+    cursor: pointer;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus ~ .form-label,
+.form-control:valid ~ .form-label {
+    top: 0;
+    font-size: 12px;
+    color: #546791;
+}
+/* end main */
+
+/* start footer */
+.footer {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Fjalla One', sans-serif;
+
+    margin-top: 20px;
+    background-color: whitesmoke;
+    color: rgb(137, 137, 137);
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+.containerFooter {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.faq,
+.nickname {
+    margin: 0 10px;
+}
+/* end footer */

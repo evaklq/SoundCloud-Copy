@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Authoritation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/logReg.css">
+    <link rel="shortcut icon" href="/img/blueUnfilled.png" type="image/png">
+    <script src="/js/authotitation.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="containerHeader">
+                <div class="headerInner">
+                        <a href="mainPage.html" class="title">
+                            Solumfy - your soul melody
+                        </a>
+                        <div class="menu">
+                            <a href="chat.html" class="Chat">
+                              Chat
+                            </a>
+                            <a href="search.html" class="Search">
+                              Search
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="containerMain">
+                <form class="registrationFormm">
+                    <div class="formGroup">
+                    <div class="formGroup">
+                        <label for="nick">Nick:</label>
+                        <input type="nick" id="nick" name="nick" required>
+                        <span class="error" id="nickError"></span>
+                    </div>
+                    <div class="formGroup">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error" id="passwordError"></span>
+                    </div>
+                    <div class="formGroup">
+                        <form id="myForm" action="registered.html" method="get">
+                            <button class="submitButton" id="submitButton">Submit</button>
+                            <span class="error" id="authoError"></span>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footerr">
+            <div class="containerFooterr">
+                <div class="footerInnerr">
+                    <a href="faq.html" class="faq">
+                        FAQ
+                    </a>
+                    <a href="https://t.me/evaklq" class="nickname">
+                        @evaklq
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

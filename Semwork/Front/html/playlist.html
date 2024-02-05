@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Playlist</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/playlist.css">
+    <link rel="shortcut icon" href="/img/blueUnfilled.png" type="image/png">
+    <script src="/js/list-song.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="containerHeader">
+                <div class="headerInner">
+                        <a href="mainPage.html" class="title">
+                            Solumfy - your soul melody
+                        </a>
+                        <div class="menu">
+                            <a href="chat.html" class="Chat">
+                              Chat
+                            </a>
+                            <a href="search.html" class="Search">
+                              Search
+                            </a>
+                            <a href="profile.html" class="Profile">
+                              Profile
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="containerMain">
+                <div class="currentSongInfo">
+                    <div class="currentSongIconInfo">
+                        <img src="https://clck.ru/36awZ6" class="icon">
+                    </div>
+                    <div class="songInfo">
+                        <div class="name">Ocean (speed up)</div>
+                        <div class="author">OBLXKQ, eyfect</div>
+                        <div class="currentSong">
+                            <img src="/img/play.png" class="playBtn" id="playBtn">
+                            <div id = "waveform"></div>
+                        </div>
+                        <img src="/img/whiteHeart.png" class="like">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <article class="article">
+            <div class="recommendations">
+                <div class="row">
+                    <div class="song">
+                        <img src="/img/header.jpg" alt="Song 1" class="iconSong">
+                        <img src="/img/playColor.png" class="play-btn" id="play-btn">
+                        <div class="info">
+                            <h3 class="song-title">Song Title 1</h3>
+                            <p class="artist">Artist 1</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <img src="/img/purpleUnfilled.png" class="like-btn" id="like-btn">
+                        <img src="/img/plus.png" class="add-to-list-btn" id="add-to-list-btn">
+                    </div>
+                    <div class="modal" id="myModal">
+                        <div class="modal-content">
+                            <span class="close" id="closeModal">&times;</span>
+                            <p>Выберите плейлист:</p>
+                            <select id="playlistSelect">
+                                <option value="playlist1">Плейлист 1</option>
+                                <option value="playlist2">Плейлист 2</option>
+                                <option value="playlist3">Плейлист 3</option>
+                            </select>
+                            <button class="addToPlaylistBtn" id="addToPlaylistBtn">Добавить в плейлист</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="song">
+                        <img src="/img/header.jpg" alt="Song 1" class="iconSong">
+                        <img src="/img/playColor.png" class="play-btn" id="play-btn">
+                        <div class="info">
+                            <h3 class="song-title">Song Title 1</h3>
+                            <p class="artist">Artist 1</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <img src="/img/purpleUnfilled.png" class="like-btn" id="like-btn">
+                        <img src="/img/plus.png" class="add-to-list-btn" id="add-to-list-btn">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="song">
+                        <img src="/img/header.jpg" alt="Song 1" class="iconSong">
+                        <img src="/img/playColor.png" class="play-btn" id="play-btn">
+                        <div class="info">
+                            <h3 class="song-title">Song Title 1</h3>
+                            <p class="artist">Artist 1</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <img src="/img/purpleUnfilled.png" class="like-btn" id="like-btn">
+                        <img src="/img/plus.png" class="add-to-list-btn" id="add-to-list-btn">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="song">
+                        <img src="/img/header.jpg" alt="Song 1" class="iconSong">
+                        <img src="/img/playColor.png" class="play-btn" id="play-btn">
+                        <div class="info">
+                            <h3 class="song-title">Song Title 1</h3>
+                            <p class="artist">Artist 1</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <img src="/img/purpleUnfilled.png" class="like-btn" id="like-btn">
+                        <img src="/img/plus.png" class="add-to-list-btn" id="add-to-list-btn">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="song">
+                        <img src="/img/header.jpg" alt="Song 1" class="iconSong">
+                        <img src="/img/playColor.png" class="play-btn" id="play-btn">
+                        <div class="info">
+                            <h3 class="song-title">Song Title 1</h3>
+                            <p class="artist">Artist 1</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <img src="/img/purpleUnfilled.png" class="like-btn" id="like-btn">
+                        <img src="/img/plus.png" class="add-to-list-btn" id="add-to-list-btn">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="song">
+                        <img src="/img/header.jpg" alt="Song 1" class="iconSong">
+                        <img src="/img/playColor.png" class="play-btn" id="play-btn">
+                        <div class="info">
+                            <h3 class="song-title">Song Title 1</h3>
+                            <p class="artist">Artist 1</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <img src="/img/purpleUnfilled.png" class="like-btn" id="like-btn">
+                        <img src="/img/plus.png" class="add-to-list-btn" id="add-to-list-btn">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer class="footer">
+            <div class="containerFooter">
+                <div class="footerInner">
+                    <a href="faq.html" class="faq">
+                        FAQ
+                    </a>
+                    <a href="https://t.me/evaklq" class="nickname">
+                        @evaklq
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

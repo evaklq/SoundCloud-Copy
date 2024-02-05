@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Song Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Philosopher:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/songStudio.css">
+    <link rel="shortcut icon" href="/img/blueUnfilled.png" type="image/png">
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+    <script src="/js/songStudio.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="containerHeader">
+                <div class="headerInner">
+                        <a href="mainPage.html" class="title">
+                            Solumfy - your soul melody
+                        </a>
+                        <div class="menu">
+                            <a href="chat.html" class="Chat">
+                              Chat
+                            </a>
+                            <a href="search.html" class="Search">
+                              Search
+                            </a>
+                            <a href="profile.html" class="Profile">
+                              Profile
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="mainContainer">
+                <div class="full-width-file-input">
+                    <label for="formFile" class="form-label">Choose a music file:</label>
+                    <input class="form-control" type="file" id="formFile" accept="audio/*" lang="en">
+        
+                    <label for="songName" class="form-label">Song Name:</label>
+                    <input class="form-control" type="text" id="songName" placeholder="Enter the song name">
+        
+                    <label for="genre" class="form-label">Genre:</label>
+                    <select class="form-control" id="genre">
+                        <option value="pop">Pop</option>
+                        <option value="rock">Rock</option>
+                        <option value="indie">Indie</option>
+                        <option value="rap">Rap</option>
+                        <option value="electronic">Electronic</option>
+                        <option value="alternative">Alternative</option>
+                        <option value="classical">Classical</option>
+                    </select>
+        
+                    <label for="trackPhoto" class="form-label">Upload Track Photo:</label>
+                    <input class="form-control" type="file" id="trackPhoto" accept="image/*" lang="en">
+                    <button class="add-button">Add</button>
+                </div>
+            </div>
+        </main>
+
+        <article class="article">
+            <div class="ourTitle">Your songs:</div>
+            <div class="recommendations"></div>
+        </article>
+        
+        <footer class="footer">
+            <div class="containerFooter">
+                <div class="footerInner">
+                    <a href="faq.html" class="faq">
+                        FAQ
+                    </a>
+                    <a href="https://t.me/evaklq" class="nickname">
+                        @evaklq
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

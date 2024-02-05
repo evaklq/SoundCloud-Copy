@@ -1,0 +1,277 @@
+/* start general info */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Fjalla One', sans-serif;
+
+    position: relative;
+    margin: 0;
+    background-image: url('/img/back.jpg');
+    background-color: #09165A;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+/* end general info */
+
+/* start header info */
+
+.header {
+    height: 70px;
+}
+
+.headerInner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.title {
+    float: left;
+    color: #546791;
+}
+
+.menu a {
+    margin-left: 10px;
+    color: #546791;
+}
+/* end header info */
+
+/* start main info */
+.main {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    margin: 0 80px;
+}
+
+.containerMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileInfo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.iconInfo {
+    width: 300px;
+    position: relative;
+}
+
+.icon {
+    width: 300px;
+    height: 300px;
+}
+
+.userInfo {
+    padding: 5px 0px;
+    margin-left: 40px;
+}
+
+.name {
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: 'Philosopher', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+.email, .number, .nick, .popularity {
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: 'Philosopher', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.songStudio {
+    font-size: 130px;
+    color: #546791;
+    padding-right: 75px;
+    text-align: right;
+    width: 300px;
+}
+/* end main info */
+
+/* start article info */
+.article {
+    padding-top: 15px; /* Уменьшите padding-top для .article */
+    padding-bottom: 15px;
+    margin: 0 80px;
+}
+
+.goToLikes {
+    font-size: 40px;
+    color: rgb(135, 85, 197);
+}
+
+.goToPlayLists {
+    color: #4673d4;
+}
+
+.playlists, .songs {
+    display: flex;
+    justify-content: space-around;
+    width: 180px;
+}
+
+.playlists {
+    padding-left: 15px;
+}
+
+.songs {
+    max-width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.song, .playlist {
+    width: 180px;
+    margin: 10px;
+    position: relative;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+.songIconSettings, .playlistIconSettings {
+    position: relative;
+    height: 180px;
+}
+
+.songIcon, .playlistIcon {
+    width: 180px;
+    height: 180px;
+}
+
+.darkenedPhoto {
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 100%;
+}
+
+.songIconSettings:hover .darkenedPhoto {
+    background-color: black;
+}
+
+.playlistIconSettings:hover .darkenedPhoto {
+    background-color: black;
+}
+
+.imageButtons {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.playSong, .playList {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+}
+
+.likeButton {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.songIconSettings:hover .imageButtons {
+    display: flex;
+}
+
+.playlistIconSettings:hover .imageButtons {
+    display: flex;
+}
+
+.songInfo, .playlistInfo {
+    padding: 5px 0px;
+}
+
+.songAuthor, .playlistAuthor {
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: 'Philosopher', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.songName, .playlistName {
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Philosopher', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* end article */
+
+/* start footer */
+.footer {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    color: rgb(137, 137, 137);
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+.containerFooter {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.faq,
+.nickname {
+    margin: 0 10px;
+}
+/* end footer */
